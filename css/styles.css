@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+/* Configurações Gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgb(38,38,38), rgb(44, 44, 44), rgb(51,51,51));
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h2.titulo {
+    color: #FFF;
+    text-align: center;
+    font-size: 42px;
+}
+
+h2.titulo span {
+    color: #8c52ff;
+}
+/*Estilo cabeçario*/
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #c4c3c3;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform .2;
+}
+
+header a:hover{
+    color: #FFF;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.btn-contato button {
+    padding: 10px 50px;
+    background-color: #8c52ff;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgb(51,51,51);
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn-contato button:hover {
+    background-color: transparent;
+    border: 1px solid #8c52ff;
+    
+    
+}
+
+/* Main */
+
+section.topo-do-site {
+    padding: 40px 4%;
+    background-color:  rgb(35, 35, 35);
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.topo-do-site h1 {
+    color: #FFF;
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.topo-do-site h1 span {
+    color: #8c52ff;
+    font-weight: bold;
+    display: block;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #FFF;
+    margin: 40px 0;
+}
+
+.btn-social {
+    display: flex;
+    gap: 10px;
+}
+
+.topo-do-site .btn-social .social {
+    width: 45px;
+    height: 45px;
+    background-color: #8c52ff;
+    color: #FFF;
+    border-radius: 50%;
+    border: 0;
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform .2;
+}
+
+.topo-do-site .btn-social .social:hover {
+   border: 1px solid white;
+   box-shadow: 0px 0px 1px white;
+   transform: scale(1.1);
+    
+}
+
+.topo-do-site .img-main img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: -10px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+section.projetos{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-1 {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.img-proj {
+    width: 360px;
+    height: 460px;
+    opacity: 0.5;
+    background-size: cover;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag-img-proj {
+    max-width: 360px;
+    text-align: center;
+    color: white;
+}
+
+.tag-img-proj p {
+    margin: 10px 0;
+}
+
+.button-proj {
+    width: 5px;
+}
+
+
+section.rodape .flex{
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape {
+    background-color: rgb(35, 35, 35);
+    
+}
+
+
+
+
+
+
+
