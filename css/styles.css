@@ -121,7 +121,7 @@ section.topo-do-site .flex {
     gap: 10px;
 }
 
-.topo-do-site .btn-social .social {
+ .btn-social .social {
     width: 45px;
     height: 45px;
     background-color: #8c52ff;
@@ -134,9 +134,9 @@ section.topo-do-site .flex {
     transition: transform .2;
 }
 
-.topo-do-site .btn-social .social:hover {
+.btn-social .social:hover {
    border: 1px solid white;
-   box-shadow: 0px 0px 1px white;
+   box-shadow: 0px 0px 2px white;
    transform: scale(1.1);
     
 }
@@ -272,25 +272,77 @@ section.projetos .flex {
     margin: 20px 0;
 }
 
-.btn-proj {
-
-    
+section.sobre {
+    padding: 40px 4%;
 }
 
-
-section.rodape .flex{
-    justify-content: center;
+section.sobre .flex {
     align-items: center;
+    gap: 80px;
 }
 
-.rodape {
-    background-color: rgb(35, 35, 35);
-    
+section .img-sobre img {
+    border-radius: 25px;
+    filter: drop-shadow(1px 1px 4px #8c52ff);
+}
+
+.sobre .txt-sobre {
+    color: #FFF;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span {
+
+    color: #8c52ff;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 16px;
 }
 
 
+footer {
+    padding: 0 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+    align-items: end;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #8c52ff;
+}
+
+footer .line-footer p i{
+    color: #8c52ff;
+    font-size: 18px;
+    margin: 0 10px 0 0;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+.copyright-footer {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
 
 
-
-
-
+.copyright-footer a {
+    color: #FFF;
+}
