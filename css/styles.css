@@ -9,6 +9,10 @@
     font-family: "Nunito", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(to right, rgb(38,38,38), rgb(44, 44, 44), rgb(51,51,51));
     height: 100vh;
@@ -32,10 +36,9 @@ h2.titulo {
 h2.titulo span {
     color: #8c52ff;
 }
-/*Estilo cabeçario*/
 
 header{
-    padding: 40px 4%;
+    padding: 10px 4% 10px 4%;
 }
 
 header > .interface {
@@ -85,7 +88,6 @@ header nav ul li {
     
 }
 
-/* Main */
 
 section.topo-do-site {
     padding: 40px 4%;
@@ -100,7 +102,7 @@ section.topo-do-site .flex {
 
 .topo-do-site h1 {
     color: #FFF;
-    font-size: 44px;
+    font-size: 40px;
     line-height: 50px;
     font-weight: bold;
 }
@@ -108,7 +110,6 @@ section.topo-do-site .flex {
 .topo-do-site h1 span {
     color: #8c52ff;
     font-weight: bold;
-    display: block;
 }
 
 .topo-do-site .txt-topo-site p{
@@ -225,7 +226,7 @@ section.projetos .flex {
 }
 
 .img-proj {
-    width: 360px;
+    width: 320px;
     height: 460px;
     background-size: cover;
     background-position: 100% 0%;
@@ -309,7 +310,7 @@ section .img-sobre img {
 
 
 footer {
-    padding: 0 4%;
+    padding: 0 4% 5px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
@@ -326,9 +327,13 @@ footer .line-footer {
     border-top: 2px solid #8c52ff;
 }
 
+footer .line-footer p {
+    font-size: 0.9em;
+}
+
 footer .line-footer p i{
     color: #8c52ff;
-    font-size: 18px;
+    font-size: 18x;
     margin: 0 10px 0 0;
 }
 
@@ -345,4 +350,84 @@ footer .line-footer p a {
 
 .copyright-footer a {
     color: #FFF;
+
+}
+
+@media screen and (max-width: 1020px) {
+
+    .flex {
+        flex-direction: column;
+    }
+
+    
+    .menu-desktop, header .btn-proj {
+        display: none;
+    }
+
+    section.topo-do-site .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+        padding: 40px 0;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .top-do-site h1 {
+        font-size: 36px;
+    }
+
+    h2.titulo {
+        font-size: 36px;
+    }
+
+    section.sobre .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        text-align: center;
+    }
+    
+    .img-sobre img {
+        width: 100%;
+    }
+
+    section.projetos {
+        padding: 80px 16%;
+    }
+
+    .img-proj, .tag-img-proj{
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex {
+        gap: 40px
+    }
+
+    footer .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    .copyright-footer {
+        font-size: 10px;
+        padding: 0 0 10px 0;
+    }
 }
