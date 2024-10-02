@@ -17,6 +17,7 @@ html {
 body {
     background: linear-gradient(to right, rgb(38,38,38), rgb(44, 44, 44), rgb(51,51,51));
     height: 100dvh;
+    padding-top: 80px;
 }
 
 .interface {
@@ -39,7 +40,13 @@ h2.titulo span {
 }
 
 header{
-    padding: 10px 4% 10px 4%;
+    padding: 10px 4% 0 4%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(51, 51, 51); 
+    z-index: 1000; 
 }
 
 header > .interface {
