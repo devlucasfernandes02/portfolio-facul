@@ -253,6 +253,11 @@ section.especialidades .flex {
     transform: scale(1.02);
     box-shadow: 0 0 8px #ffffff78;
 }
+
+.especialidades .especialidades-box > img {
+    background-color: transparent;
+}
+
 .especialidades .especialidades-box img:hover {
     scale: 1.05;
     cursor: pointer;
